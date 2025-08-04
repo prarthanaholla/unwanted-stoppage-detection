@@ -28,7 +28,7 @@ for i in range(len(matched_coords) - 1):
 
     # Optional: Handle missing timestamps, you can skip or assign a default
     if start_time is None or end_time is None:
-        print(f"⚠️ Missing timestamp for segment {i}-{i+1}, skipping segment")
+        print(f" Missing timestamp for segment {i}-{i+1}, skipping segment")
         continue  # Skip this segment or assign a default value if you wish
 
     body = {
@@ -42,7 +42,7 @@ for i in range(len(matched_coords) - 1):
 
     res = requests.post(valhalla_url, json=body)
     if res.status_code != 200:
-        print(f"⚠️ Failed between point {i}-{i+1}: {res.text}")
+        print(f" Failed between point {i}-{i+1}: {res.text}")
         continue
 
     route = res.json()["trip"]
@@ -75,5 +75,5 @@ output_geojson = {
 with open(output_file, "w") as f:
     json.dump(output_geojson, f, indent=2)
 
-print(f"\n✅ Total route distance: {round(total_distance, 2)} meters")
-print(f"✅ Output saved to {output_file}")
+print(f"\n Total route distance: {round(total_distance, 2)} meters")
+print(f" Output saved to {output_file}")
