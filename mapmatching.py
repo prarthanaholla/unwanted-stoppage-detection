@@ -2,7 +2,7 @@ import json
 import requests
 
 # --- Load GeoJSON trace ---
-with open("gpspoints.geojson") as f:
+with open("gpsdata.geojson") as f:
     data = json.load(f)
 
 points = []

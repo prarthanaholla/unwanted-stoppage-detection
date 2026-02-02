@@ -48,3 +48,19 @@ Thumbs.db
 *.mov
 *.wmv
 
+
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Datasets & outputs (DO NOT UPLOAD)
+*.geojson
+*.csv
+*.osm.pbf
+custom_data/valhalla_tiles/
+
+# OS files
+Thumbs.db
+.DS_Store
+
