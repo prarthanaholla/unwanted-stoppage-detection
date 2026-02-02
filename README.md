@@ -175,7 +175,9 @@ Users should place their GPS dataset locally and update the input path in the sc
 #### OpenStreetMap Data
 
 Download the required regional OSM extract (e.g., from Geofabrik) and place it in:
+
 custom_data/
+
 └── bangalore_full.osm.pbf
 
 
