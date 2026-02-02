@@ -155,20 +155,6 @@ This avoids false positives caused by traffic or normal movement.
 
 
 
-##Project Structure
-stoppage-analysis/
-│
-├── conf/
-│   └── valhalla.json
-│
-├── custom_data/
-│   ├── valhalla_tiles/
-│   └── bangalore_full.osm.pbf
-│
-├── edp_filtering.py
-├── map_matching.py
-├── routedistance_calculation.py
-└── stoppage_detection.py
 
 
 ## Setup & Execution
@@ -211,7 +197,10 @@ Keep the Valhalla service running.
 
 2.Run the Pipeline
 python edp_filtering.py
+
 python map_matching.py
+
 python routedistance_calculation.py
+
 python stoppage_detection.py
 
