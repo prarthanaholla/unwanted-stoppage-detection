@@ -57,21 +57,22 @@ This project uses Enhanced Douglas–Peucker (ESTC-EDP), which preserves points 
 
 Constraints applied:
 
-•	1.Time constraint → preserves stop points
+•	Time constraint → preserves stop points
 
-•	2.Speed constraint → preserves speed changes
+•	Speed constraint → preserves speed changes
 
-•	3.Spatial constraint → avoids over-smoothing
+•	Spatial constraint → avoids over-smoothing
 
 Only points with no meaningful behavioral variation are removed.
 
 Result:
 
-•	1.Reduced noise
+•	Reduced noise
 
-•	2.Preserved stoppage-related behavior
+•	Preserved stoppage-related behavior
 
-•	3.Faster and more reliable downstream processing
+•	Faster and more reliable downstream processing
+
 
 
 2.Map Matching using Valhalla
@@ -106,6 +107,7 @@ GPS points snapped accurately to real road segments
 
 
 
+
 3.Route Distance Calculation
 
 Straight-line (haversine) distance underestimates real travel distance.
@@ -117,6 +119,8 @@ This step computes:
 •	Uses Valhalla routing instead of aerial distance
 
 •	This enables realistic travel-time estimation.
+
+
 
 
 4.Stoppage Detection Logic
