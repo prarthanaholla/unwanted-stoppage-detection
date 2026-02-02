@@ -47,17 +47,6 @@ Without proper preprocessing, stoppage detection becomes inaccurate and unreliab
 
 ---
 
-##  System Architecture
-Raw GPS Data
-↓
-EDP-based GPS Filtering
-↓
-Valhalla Map Matching
-↓
-Route Distance Calculation
-↓
-Stoppage Detection
-
 
 ## Methodology
 1️. GPS Filtering using EDP (Enhanced Douglas–Peucker)
